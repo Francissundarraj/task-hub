@@ -30,7 +30,7 @@ function Dashboardnav() {
     
     return (
         <div>
-            <div className="  h-[100vh] bg-[#454a58] hidden md:flex flex-col items-center   rounded-xl my-16 mx-2  gap-10">
+            <div className="  h-[100vh] bg-[#454a58] hidden md:flex flex-col items-center   rounded-xl my-16 mx-2 gap-10">
 
                 <div className="flex m-5 items-center  relative group ">
                     <Link to="/dashboardlayout/myboard" className="inline-flex items-center">                               
@@ -81,7 +81,7 @@ function Dashboardnav() {
                 }
 
                 {sideNav && (
-                    <div className=" fixed top-24 left-0 flex flex-col  bg-slate-500  font-bold rounded-xl  ">
+                    <div className=" fixed top-24 left-0 flex flex-col  bg-[#353534] z-30 font-bold rounded-xl  ">
 
                         <div className="flex m-5 items-center gap-5">
                             <img className="h-7" src={home} alt="" />

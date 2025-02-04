@@ -85,7 +85,7 @@ const EditTaskForm = ({ task }) => {
 
             {/* Form */}
             {showForm && (
-                <div className="edit-form-container ">
+                <div className="edit-form-container fixed ">
                     <div className="form-overlay " onClick={handleCloseForm}></div> {/* Optional: Overlay to close form when clicked outside */}
                     <div className="form-content">
                         <img className='absolute h-8 top-2 right-2 cursor-pointer' src={close} alt="close" onClick={handleCloseForm} />

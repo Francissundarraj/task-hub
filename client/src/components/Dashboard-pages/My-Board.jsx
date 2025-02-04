@@ -20,7 +20,7 @@ const MyBoard = () => {
         <div>
             <div className='flex justify-between mx-6 md:mx-9 my-1 '>
                 <div >
-                    <p className='t'>You have {activeTasks.length} pending tasks</p>
+                    <p className='text-[#bbb9b9]'>You have {activeTasks.length} pending tasks</p>
                     
                 </div>
                 <div>

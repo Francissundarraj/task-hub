@@ -12,13 +12,15 @@ const Taskcard = () => {
         return (
         <div>
 
-            <div className='bg-[#153436] h-[100vh]   rounded-3xl mx-5 p-5'>
-            <h1 className='text-2xl font-bold'>Task Board</h1>
+            <div className=' min-h-screen   rounded-3xl mx-5 p-5 bg-[#ffffff0f] backdrop-blur-md border border-[#ffffff1a] shadow-lg'>
+            <h1 className='text-2xl font-bold mx-6 mb-5 text-[#EBEBEB]'>Tasks in Progress</h1>
                 <div className='flex  flex-wrap  px-7'>
                     {tasks && tasks.length > 0 ? (
 
                         pendingTasks.map((card) => (
-                            <div key={card._id} className='flex flex-col overflow-auto  w-80 h-[20rem] px-4 py-3 gap-4 shadow-sm m-2 bg-white rounded-lg border-2 border-white'>
+                            <div key={card._id} className='flex flex-col overflow-auto  w-80 h-[20rem] px-4 py-3 gap-4 shadow-sm m-2                            
+                            border-[#b82d34] bg-gradient-to-b from-[#091513] to-[#364d48] transition-all duration-300
+                             hover:shadow-[0_0_15px_#00ffcc] rounded-lg border-2 '>
                                 <h1 className='text-2xl font-bold'>{card.taskName}</h1>
                                 <p className='whitespace-normal break-words'>{card.description}</p>
                                 <p>Status :{card.status}</p>

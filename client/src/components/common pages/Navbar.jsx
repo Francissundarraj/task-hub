@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import logo from "../../assets/logo4.png"
-import menu from "../../assets/menu.png"
+import menu from "../../assets/menu5.png"
 import { useEffect, useState } from "react"
 import auth from "../../Config"
 function Navbar() {
@@ -46,7 +46,7 @@ function Navbar() {
             </div>
 
             {/* Side Navbar */}
-            <div onClick={toggleMenu} className="cursor-c10 md:hidden">
+            <div onClick={toggleMenu} className="cursor-c10 md:hidden mx-5">
                 <img className="h-10 " src={menu} alt="" />
             </div>
             {isMenuOpen && (

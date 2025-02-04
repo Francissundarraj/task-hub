@@ -110,11 +110,11 @@ const apiUrl = import.meta.env.VITE_BASE_URL || 'http://localhost:5000';
     const pendingTasks = filterTasksByStatus(tasks, "Pending");
     const plannedTasks = filterTasksByStatus(tasks, "Planned");
     return (
-        <div className="min-h-screen w-full bg-[#ffffff] mt-1 p-1 ">
+        <div className="min-h-screen w-full bg-[#000] mt-1 p-1">
 
 
             <div className=" mt-5 mx-16 md:mx-32 md:mt-10  ">
-                <h1 className="text-2xl">Welcome, <span className="text-[#1f756a] font-bold">{displayName}</span> </h1>
+                <h1 className="text-2xl text-[#a2a89d]">Welcome, <span className="text-[#52832C] font-bold">{displayName}</span> </h1>
             </div>
 
             <div className="flex  ">

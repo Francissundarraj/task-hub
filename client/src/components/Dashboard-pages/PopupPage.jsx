@@ -76,12 +76,14 @@ const PopupForm = () => {
   return (
     <div>
 
-      <div><button onClick={openForm} type='submit' className='bg-[#b3389e] px-4 py-2 rounded-3xl'>Add a new Tasks</button> </div>
+      <div><button onClick={openForm} type='submit' className='bg-[#29ccab]  hover:scale-105
+       text-black px-4 py-3 rounded-full shadow-lg transition-transform transform 
+       hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-300'>Add a new Tasks</button> </div>
 
       {
         showForm && (
-          <div className="popup-overlay fixed top-40 left-20 w-96 md:top-[13%] md:left-[40%] md:w-[500px]  ">
-            <form className='p-10' onSubmit={handleSubmit}>
+          <div className="popup-overlay fixed top-40 left-20 w-96 md:top-[13%] md:left-[40%] md:w-[500px]  z-20 ">
+            <form className='p-10 bg-gradient-to-b from-[#1E3B3A] to-[#162726] border border-[#00ffcc50] backdrop-blur-2xl  rounded-lg shadow-xl' onSubmit={handleSubmit}>
 
               <div  >
                 <img onClick={closeForm} className='absolute h-8 top-2 right-2' src={close} alt="" />

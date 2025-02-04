@@ -100,7 +100,7 @@ body {
 
 
 .edit-form-container {
-    position: fixed; /* Fixed to the viewport */
+   
     top: 0;
     left: 0;
     right: 0;
@@ -108,7 +108,7 @@ body {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
     display: flex;
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    
     z-index: 9999; /* Make sure it appears in the foreground */
 }
 
