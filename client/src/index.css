@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    cursor: url('./Assets/c18.png'), auto;
+    cursor: url('./assets/c18.png'), auto;
     font-family: "Poppins", serif;
 }
 

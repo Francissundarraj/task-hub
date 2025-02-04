@@ -29,14 +29,14 @@ function DashBoardLayout() {
 
 const [favTask,setFavTask] = useState("")
 const apiUrl = import.meta.env.VITE_BASE_URL || 'http://localhost:5000';
-const tasksUrl = `${apiUrl}/tasks`;
+
 
     useEffect(() => {
             const auth = getAuth();
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
                 user.getIdToken().then((token) => {
-                    axios.get(tasksUrl, { 
+                    axios.get(`${apiUrl}/tasks`, { 
                         
                         headers: {
                             Authorization: `Bearer ${token}`, 

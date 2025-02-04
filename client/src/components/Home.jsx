@@ -58,53 +58,53 @@ auth.onAuthStateChanged(function (user) {
 
 
 
-      <div class="flex space-x-8 justify-center mt-10">
+      <div className="flex space-x-8 justify-center mt-10">
 
-        <div class="bg-blue-500 text-white  p-6 rounded-lg shadow-lg w-64 text-center">
-          <h3 class="text-2xl font-bold">Total Tasks</h3>
-          <p class="text-4xl font-extrabold">25</p>
+        <div className="bg-blue-500 text-white  p-6 rounded-lg shadow-lg w-64 text-center">
+          <h3 className="text-2xl font-bold">Total Tasks</h3>
+          <p className="text-4xl font-extrabold">25</p>
         </div>
 
 
-        <div class="bg-green-500 text-white p-6 rounded-lg shadow-lg w-64 text-center">
-          <h3 class="text-2xl font-bold">Completed Tasks</h3>
-          <p class="text-4xl font-extrabold">15</p>
+        <div className="bg-green-500 text-white p-6 rounded-lg shadow-lg w-64 text-center">
+          <h3 className="text-2xl font-bold">Completed Tasks</h3>
+          <p className="text-4xl font-extrabold">15</p>
         </div>
 
 
-        <div class="bg-yellow-500 text-white p-6 rounded-lg shadow-lg w-64 text-center">
-          <h3 class="text-2xl font-bold">Pending Tasks</h3>
-          <p class="text-4xl font-extrabold">10</p>
+        <div className="bg-yellow-500 text-white p-6 rounded-lg shadow-lg w-64 text-center">
+          <h3 className="text-2xl font-bold">Pending Tasks</h3>
+          <p className="text-4xl font-extrabold">10</p>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
 
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <div className="bg-white p-6 rounded-lg shadow-lg text-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path d="M17 8h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h2" />
             <path d="M12 14h.01" />
           </svg>
-          <h3 class="text-xl font-bold mt-4">Task Deadlines</h3>
-          <p class="text-gray-500">Set due dates for your tasks to stay on track.</p>
+          <h3 className="text-xl font-bold mt-4">Task Deadlines</h3>
+          <p className="text-gray-500">Set due dates for your tasks to stay on track.</p>
         </div>
 
 
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <div className="bg-white p-6 rounded-lg shadow-lg text-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path d="M12 2a6 6 0 0 1 6 6v4a4 4 0 0 1 4 4v6H2v-6a4 4 0 0 1 4-4V8a6 6 0 0 1 6-6z" />
           </svg>
-          <h3 class="text-xl font-bold mt-4">Notifications</h3>
-          <p class="text-gray-500">Get reminders for upcoming tasks and deadlines.</p>
+          <h3 className="text-xl font-bold mt-4">Notifications</h3>
+          <p className="text-gray-500">Get reminders for upcoming tasks and deadlines.</p>
         </div>
 
 
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <div className="bg-white p-6 rounded-lg shadow-lg text-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path d="M5 3v18h14V3H5zm4 14h6v2H9v-2z" />
           </svg>
-          <h3 class="text-xl font-bold mt-4">Task Categories</h3>
-          <p class="text-gray-500">Organize tasks into categories for better tracking.</p>
+          <h3 className="text-xl font-bold mt-4">Task Categories</h3>
+          <p className="text-gray-500">Organize tasks into categories for better tracking.</p>
         </div>
       </div>
 
