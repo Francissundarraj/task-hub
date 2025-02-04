@@ -8,9 +8,9 @@ function Contact() {
     return(
 
  <div>
-   <div class="grid md:grid-cols-3 items-start gap-4 max-md:gap-12 max-w-6xl mx-auto py-6 bg-white font-[sans-serif]">
+   <div class="grid md:grid-cols-3 items-start gap-4 max-md:gap-12 max-w-6xl mx-auto py-6 bg-[#030C10] font-[sans-serif]">
       <div class="px-4">
-        <h2 class="text-gray-800 text-xl font-semibold">Contact Information</h2>
+        <h2 class="text-gray-600 text-2xl font-semibold">Contact Information</h2>
 
         <div class="space-y-8 mt-8">
           <div class="flex">
@@ -20,8 +20,8 @@ function Contact() {
 
             <div class="ml-4">
               <h4 class="text-gray-800 text-base font-semibold">Chat to us</h4>
-              <p class="text-xs mt-1 text-gray-500">Chat with our team to help.</p>
-              <p class="text-sm mt-4">goalgetter@gmail.com</p>
+              <p class="text-sm mt-1 text-gray-500">Chat with our team to help.</p>
+              <p class="text-lg mt-4 text-gray-500">goalgetter@gmail.com</p>
             </div>
           </div>
 
@@ -32,8 +32,8 @@ function Contact() {
 
             <div class="ml-4">
               <h4 class="text-gray-800 text-base font-semibold">Visit us</h4>
-              <p class="text-xs mt-1 text-gray-500">Visit our office HQ.</p>
-              <p class="text-sm mt-4">Goripalayam, Madurai</p>
+              <p class="text-sm mt-1 text-gray-500">Visit our office HQ.</p>
+              <p class="text-lg mt-4 text-gray-500">Goripalayam, Madurai</p>
             </div>
           </div>
 
@@ -44,8 +44,8 @@ function Contact() {
 
             <div class="ml-4">
               <h4 class="text-gray-800 text-base font-semibold">Call us</h4>
-              <p class="text-xs mt-1 text-gray-500">Monday to Friday.</p>
-              <p class="text-sm mt-4">+158 996 888</p>
+              <p class="text-sm mt-1 text-gray-500">Monday to Friday.</p>
+              <p class="text-lg mt-4 text-gray-500">+158 996 888</p>
             </div>
           </div>
         </div>

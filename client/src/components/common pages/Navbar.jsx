@@ -23,7 +23,7 @@ function Navbar() {
     })
 
     return (
-        <div className="flex justify-between items-center text-xl m-2 ">
+        <div className="flex justify-between items-center text-xl m-5 shadow-[0px_5px_15px_#AA7F6F] rounded-lg ">
 
             <div className="flex flex-row items-center card gap-2 p-2">
                 <img className="h-14 mx-2" src={logo} alt="" />
@@ -33,14 +33,14 @@ function Navbar() {
             {/* Main Navbar */}
 
             <div className=" hidden md:flex  justify-between  ">
-                <Link className=" hover:text-red-700 px-8 underline decoration-transparent hover:decoration-[#1d1c1c]  underline-offset-4 transition-all
+                <Link className=" text-[#c4bebe] hover:text-red-700 px-8 underline decoration-transparent hover:decoration-[#1d1c1c]  underline-offset-4 transition-all
                          ease-in-out duration-500 cursor-c5" to={"/"}>Home</Link>
-                <Link className="  hover:text-red-700 px-8 underline decoration-transparent hover:decoration-[#1d1c1c]  underline-offset-4 transition-all
+                <Link className=" text-[#c4bebe] hover:text-red-700 px-8 underline decoration-transparent hover:decoration-[#1d1c1c]  underline-offset-4 transition-all
                          ease-in-out duration-500 cursor-c5" to={"/about"}>About</Link>
-                <Link className="  hover:text-red-700 px-8 underline decoration-transparent hover:decoration-[#1d1c1c]  underline-offset-4 transition-all
+                <Link className=" text-[#c4bebe] hover:text-red-700 px-8 underline decoration-transparent hover:decoration-[#1d1c1c]  underline-offset-4 transition-all
                          ease-in-out duration-500 cursor-c5" to={"/contact"}>Contact</Link>
                 {
-                    showLogin ? <Link className=" hover:text-red-700 px-8 underline decoration-transparent hover:decoration-[#1d1c1c]  underline-offset-4 transition-all
+                    showLogin ? <Link className="text-[#c4bebe] hover:text-red-700 px-8 underline decoration-transparent hover:decoration-[#1d1c1c]  underline-offset-4 transition-all
                          ease-in-out duration-500 cursor-c5" to={"/login"} >Login</Link> : ""
                 }
             </div>
