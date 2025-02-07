@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import { TaskContext } from '../Dashboard';
 import axios from 'axios';
 import edit from "../../assets/edit10.png";
-import close from "../../assets/close.png"; // Assuming you have a close icon for closing the form
+import close from "../../assets/close4.png"; // Assuming you have a close icon for closing the form
 
 const EditTaskForm = ({ task }) => {
     const { setTasks,apiUrl } = useContext(TaskContext);
@@ -17,7 +17,7 @@ const EditTaskForm = ({ task }) => {
 
     useEffect(() => {
         if (task) {
-            setFormData(task); // Populate form with task data if editing
+            setFormData(task)
         } else {
             setFormData({
                 taskName: '',
@@ -30,7 +30,7 @@ const EditTaskForm = ({ task }) => {
     }, [task]);
 
     const handleInputChange = (e) => {
-        const { name, value } = e.target;
+        const { name, value } = e.target
         setFormData((prevData) => ({
             ...prevData,
             [name]: value,
@@ -58,7 +58,6 @@ const EditTaskForm = ({ task }) => {
             console.log("Task updated successfully:", response.data);
             alert("Task updated successfully");
 
-            // Update the tasks in state after successful update
             setTasks((prevTasks) =>
                 prevTasks.map((t) =>
                     t._id === task._id ? { ...t, ...formData } : t
@@ -73,27 +72,27 @@ const EditTaskForm = ({ task }) => {
     };
 
     const handleCloseForm = () => {
-        setShowForm(false); // Close the form when the close button is clicked
+        setShowForm(false); 
     };
 
     return (
         <div>
-            {/* Edit Button */}
+           
             <button onClick={() => setShowForm(true)}>
-                <img className='h-4 cursor-finger8' src={edit} alt="edit" />
+                <img className='h-5 cursor-finger7' src={edit} alt="edit" />
             </button>
 
-            {/* Form */}
+          
             {showForm && (
                 <div className="edit-form-container fixed ">
                     <div className="form-overlay " onClick={handleCloseForm}></div> {/* Optional: Overlay to close form when clicked outside */}
                     <div className="form-content">
                         <img className='absolute h-8 top-2 right-2 cursor-pointer' src={close} alt="close" onClick={handleCloseForm} />
 
-                        <form className='p-10 text-white' onSubmit={handleUpdate}>
+                        <form className='p-10 text-black' onSubmit={handleUpdate}>
                             <div  className='my-5'>
                                 <label  className='block'> Title</label>
-                                <input className='w-full rounded-xl bg-[#53575C] p-1 transition duration-500 ease-in-out border-2 
+                                <input className='w-full rounded-xl bg-[#8c9caf]/50 p-1 transition duration-500 ease-in-out border-2 
                 border-transparent hover:border-green-500 focus:outline-none' 
                                     type="text"
                                     name="taskName"
@@ -103,7 +102,7 @@ const EditTaskForm = ({ task }) => {
                             </div> 
                             <div className='my-5'>
                                 <label  className='block'>Description</label>
-                                <textarea className='w-full rounded-xl bg-[#53575C] p-1 transition duration-500 ease-in-out border-2 
+                                <textarea className='w-full rounded-xl bg-[#8c9caf]/50  p-1 transition duration-500 ease-in-out border-2 
                 border-transparent hover:border-green-500 focus:outline-none' 
                                     name="description"
                                     value={formData.description}
@@ -112,7 +111,7 @@ const EditTaskForm = ({ task }) => {
                             </div>
                             <div className='my-5'>
                                 <label  className='block'>Priority</label>
-                                <select className='w-full rounded-xl bg-[#53575C] p-1 transition duration-500 ease-in-out border-2 
+                                <select className='w-full rounded-xl bg-[#8c9caf]/50 p-1 transition duration-500 ease-in-out border-2 
                 border-transparent hover:border-green-500 focus:outline-none' 
                                     name="priority"
                                     value={formData.priority}
@@ -126,7 +125,7 @@ const EditTaskForm = ({ task }) => {
                             </div>
                             <div className='my-5'>
                                 <label  className='block'>Due Date</label>
-                                <input className='w-full rounded-xl bg-[#53575C] p-1 transition duration-500 ease-in-out border-2 
+                                <input className='w-full rounded-xl bg-[#8c9caf]/50  p-1 transition duration-500 ease-in-out border-2 
                 border-transparent hover:border-green-500 focus:outline-none' 
                                     type="date"
                                     name="date"
@@ -136,7 +135,7 @@ const EditTaskForm = ({ task }) => {
                             </div>
                             <div className='my-5'>
                                 <label  className='block'>Task Status</label>
-                                <select className='w-full rounded-xl bg-[#53575C] p-1 transition duration-500 ease-in-out border-2 
+                                <select className='w-full rounded-xl bg-[#8c9caf]/50  p-1 transition duration-500 ease-in-out border-2 
                 border-transparent hover:border-green-500 focus:outline-none' 
                                     name="status"
                                     value={formData.status}

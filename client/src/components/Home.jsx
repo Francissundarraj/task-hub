@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom"
 
 import auth from "../Config"
 
-
 function Home() {
   const navigate = useNavigate()
 
@@ -13,24 +12,20 @@ function Home() {
     auth.onAuthStateChanged(function (user) {
       if (user) {
         console.log("Logged IN")
-        navigate('/DashBoardLayout')
+        navigate('/DashBoard/myboard')
       }
-
       else {
         console.log("Logged Out")
       }
     })
   })
 
-
   function handleStarted() {
     navigate('/signup')
   }
-
   function knowMore() {
     navigate("/about")
   }
-
   return (
     <div >
 
@@ -127,7 +122,6 @@ function Home() {
         <img src={quote} alt="" className="h-8 w-8 inline-block" />
         Together, we reach greater heights, one magical task at a time!
       </h1>
-
 
 
       <div className="flex flex-wrap justify-center gap-8 mt-10 mb-36">

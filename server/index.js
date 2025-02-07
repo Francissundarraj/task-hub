@@ -39,6 +39,7 @@ const taskSchema = new mongoose.Schema(
     priority: { type: String, enum: ["High", "Medium", "Low"], default: "Medium" },
     status: { type: String, enum: ["Completed", "Pending","Planned"], default: "No" },
     userId: { type: String, required: true },
+   
   },
   { timestamps: true }
 );
@@ -75,7 +76,7 @@ app.get("/tasks", authenticateUser, async (req, res) => {
 
 app.post("/addtask", authenticateUser, async (req, res) => {
   try {
-    const { taskName, description, date, priority, status } = req.body.newtask;
+    const { taskName, description, date, priority, status  } = req.body.newtask;
 
     const newTask = new Task({
       taskName,
@@ -84,6 +85,7 @@ app.post("/addtask", authenticateUser, async (req, res) => {
       priority,
       status,
       userId: req.userId,
+      
     });
 
     await newTask.save();
@@ -106,7 +108,8 @@ app.put("/tasks/:taskId", authenticateUser, async (req, res) => {
             taskName: taskName || undefined,
             description: description || undefined,
             status: status || undefined,
-            dueDate : dueDate || undefined
+            dueDate : dueDate || undefined ,
+            
            
         },
 

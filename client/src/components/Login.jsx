@@ -21,7 +21,7 @@ function Login() {
           console.log(token)
         })
 
-        navigate('/dashboardlayout/myboard')
+        navigate('dashboard/dashboardhome')
       }
 
 
@@ -31,13 +31,13 @@ function Login() {
   function loginUser(event) {
     event.preventDefault();
 
-    // Clear any previous error messages
+ 
     setErrorMsg("");
 
     signInWithEmailAndPassword(auth, user, pass)
         .then(() => {
-            // Redirect to the dashboard on successful login
-            navigate("/dashboardlayout/myboard");
+          
+            navigate("/dashboard/dashboardhome");
         })
         .catch((error) => {                 
             setErrorMsg("Login Failed. Please try again");

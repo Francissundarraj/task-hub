@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import banner from "../assets/lm2.png"
 import { useNavigate } from "react-router-dom"
 import { createUserWithEmailAndPassword } from "firebase/auth"
@@ -12,7 +12,6 @@ function Signup() {
     const [name, setName] = useState("")
     const [user, setUser] = useState("")
     const [pass, setPass] = useState("")
-
 
     function signupuser(event) {
         event.preventDefault();
