@@ -21,7 +21,10 @@ function Dashboardnav() {
 
     function logout() {
         signOut(auth).then(() => {
+            localStorage.removeItem("firebaseToken")
             navigate("/login")
+        }).catch((error)=>{
+            console.log("Signout Error:", error)
         })
     }
 
