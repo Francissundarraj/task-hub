@@ -19,7 +19,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          {/* ✅ Protecting Dashboard Pages */}
+   
           <Route path="/dashboard/*" element={<ProtectedRoute><DashBoard /></ProtectedRoute>}>
             <Route path="dashboardhome" element={<DashboardHome />} />
             <Route path="inprogress" element={<InProgress />} />
