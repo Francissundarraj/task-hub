@@ -29,18 +29,18 @@ function Login() {
   }, [])
 
   function loginUser(event) {
-    event.preventDefault();
-    setErrorMsg("");
+    event.preventDefault()
+    setErrorMsg("")
 
     signInWithEmailAndPassword(auth, user, pass)
         .then((userCredential) => {
             userCredential.user.getIdToken().then((token) => {
-                localStorage.setItem("firebaseToken", token);
-                navigate("/dashboard/dashboardhome");  // ✅ Navigate after successful login
-            });
+                localStorage.setItem("firebaseToken", token)
+                navigate("/dashboard/dashboardhome")
+            })
         })
         .catch(() => {
-            setErrorMsg("Login Failed. Please try again.");
+            setErrorMsg("Login Failed. Please try again.")
         });
 }
 
